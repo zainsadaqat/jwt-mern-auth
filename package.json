@@ -1,0 +1,33 @@
+{
+  "name": "jwt-with-typescript",
+  "version": "1.0.0",
+  "description": "Implementing JWT from scratch",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/app/server.js",
+    "server": "nodemon backend/app/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "jwt"
+  ],
+  "author": "Zain Sadaqat",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
